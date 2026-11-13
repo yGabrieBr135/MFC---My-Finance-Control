@@ -1,0 +1,16 @@
+{
+  "name": "mfc-aula04",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MFC — My Finance Control | Projeto de Testes de Software",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.cjs",
+    "test": "node --test tests/unit.test.cjs tests/integration.test.cjs",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-include=src/*.cjs tests/unit.test.cjs tests/integration.test.cjs",
+    "test:e2e": "node tests/e2e.cjs",
+    "test:performance": "node tests/performance.cjs"
+  }
+}
