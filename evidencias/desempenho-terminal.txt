@@ -1,0 +1,5 @@
+PASS | cadastro: média 5.268 ms; máximo 9.531 ms; 10 execuções
+PASS | edicao: média 5.37 ms; máximo 6.961 ms; 10 execuções
+PASS | exclusao: média 5.905 ms; máximo 11.01 ms; 10 execuções
+PASS | consulta: média 3.544 ms; máximo 11.338 ms; 10 execuções
+PASS | resumo: média 2.321 ms; máximo 4.33 ms; 10 execuções

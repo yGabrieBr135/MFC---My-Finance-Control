@@ -1,0 +1,98 @@
+{
+  "executedAt": "2026-11-13T22:24:31.369Z",
+  "scope": "HTTP local, incluindo gravação JSON e leitura da resposta; exclui renderização do navegador",
+  "initialRecords": 1000,
+  "runsPerOperation": 10,
+  "thresholdMs": 2000,
+  "node": "v24.22.1",
+  "platform": "linux",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "totalMemoryGiB": 9.73,
+  "results": {
+    "cadastro": {
+      "samplesMs": [
+        9.531,
+        6.202,
+        5.43,
+        4.24,
+        4.112,
+        4.151,
+        3.995,
+        6.57,
+        4.435,
+        4.019
+      ],
+      "averageMs": 5.268,
+      "maxMs": 9.531,
+      "passed": true
+    },
+    "edicao": {
+      "samplesMs": [
+        5.623,
+        6.961,
+        4.45,
+        4.683,
+        5.027,
+        4.581,
+        5.745,
+        6.316,
+        6.077,
+        4.237
+      ],
+      "averageMs": 5.37,
+      "maxMs": 6.961,
+      "passed": true
+    },
+    "exclusao": {
+      "samplesMs": [
+        11.01,
+        4.925,
+        6.339,
+        4.036,
+        4.497,
+        4.025,
+        3.896,
+        4.28,
+        9.367,
+        6.676
+      ],
+      "averageMs": 5.905,
+      "maxMs": 11.01,
+      "passed": true
+    },
+    "consulta": {
+      "samplesMs": [
+        11.338,
+        4.23,
+        2.145,
+        2.072,
+        2.323,
+        2.037,
+        1.939,
+        2.804,
+        4.289,
+        2.259
+      ],
+      "averageMs": 3.544,
+      "maxMs": 11.338,
+      "passed": true
+    },
+    "resumo": {
+      "samplesMs": [
+        4.33,
+        2.248,
+        1.735,
+        2.324,
+        1.728,
+        2.049,
+        1.678,
+        2.108,
+        3.415,
+        1.6
+      ],
+      "averageMs": 2.321,
+      "maxMs": 4.33,
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,74 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> mfc-aula04@1.0.0 test:coverage
+> node --test --experimental-test-coverage --test-coverage-include=src/*.cjs tests/unit.test.cjs tests/integration.test.cjs
+
+✔ I01 | CRUD HTTP + resumo + atualização de orçamento (105.346299ms)
+✔ I02 | cancelar exclusão mantém registro e totais (9.445675ms)
+✔ I03 | validação HTTP impede alteração e persistência inválidas (7.279622ms)
+✔ I04 | RNF-002 | 20 registros + 2 orçamentos íntegros após 3 reinícios reais (50.061161ms)
+✔ I05 | orçamento substituído, zero rejeitado, outros meses preservados (6.263299ms)
+✔ I06 | edição entre meses recalcula ambos os orçamentos (6.822151ms)
+✔ I07 | arquivo corrompido não é sobrescrito (0.995041ms)
+✔ I08 | falha de gravação não modifica estado em memória (0.519533ms)
+✔ I09 | API protege origem externa e retorna 404 (5.666352ms)
+✔ I10 | filtro não altera resumo do período (6.805858ms)
+✔ I11 | configuração, filtros e mês inválidos retornam mensagens (4.859411ms)
+✔ U01 | RN-001 | converte R$ 0,01 e valor máximo em centavos exatos (3.545685ms)
+✔ U02 | RN-001 | aceita ponto ou vírgula e normaliza uma casa (0.215761ms)
+✔ U03 | RN-001 | rejeita valor inválido "0" (0.602617ms)
+✔ U03 | RN-001 | rejeita valor inválido "-1" (0.11457ms)
+✔ U03 | RN-001 | rejeita valor inválido "abc" (0.138115ms)
+✔ U03 | RN-001 | rejeita valor inválido "1,234" (0.124375ms)
+✔ U03 | RN-001 | rejeita valor inválido "1e3" (0.108331ms)
+✔ U03 | RN-001 | rejeita valor inválido "NaN" (0.154661ms)
+✔ U03 | RN-001 | rejeita valor inválido "Infinity" (1.480513ms)
+✔ U03 | RN-001 | rejeita valor inválido "1.000,00" (0.096113ms)
+✔ U03 | RN-001 | rejeita valor inválido "" (0.053369ms)
+✔ U03 | RN-001 | rejeita valor inválido "1000000000" (0.065537ms)
+✔ U03 | RN-001 | rejeita valor inválido "1," (0.038568ms)
+✔ U03 | RN-001 | rejeita valor inválido null (0.092528ms)
+✔ U03 | RN-001 | rejeita valor inválido 1.25 (0.053299ms)
+✔ U04 | RN-001 | valida lançamento e remove espaços da descrição (1.649365ms)
+✔ U05 | RN-001 | rejeita campo description inválido (0.142953ms)
+✔ U05 | RN-001 | rejeita campo description inválido (0.155422ms)
+✔ U05 | RN-001 | rejeita campo type inválido (0.237434ms)
+✔ U05 | RN-001 | rejeita campo type inválido (0.103063ms)
+✔ U05 | RN-001 | rejeita campo date inválido (0.158526ms)
+✔ U05 | RN-001 | rejeita campo date inválido (0.131215ms)
+✔ U05 | RN-001 | rejeita campo category inválido (0.12105ms)
+✔ U06 | RN-001 | rejeita entrada vazia e aceita descrição com 100 caracteres (0.336782ms)
+✔ U07 | RN-001 | aceita hoje e rejeita amanhã (0.217543ms)
+✔ U08 | datas | valida ano bissexto e recusa data impossível (0.164245ms)
+✔ U09 | RN-002 | inclui ambas as extremidades do intervalo (7.54734ms)
+✔ U10 | RN-002 | filtros de tipo e categoria combinados (0.449259ms)
+✔ U11 | RN-002 | recusa intervalo invertido e filtros inexistentes (0.32247ms)
+✔ U12 | RN-002 | resumo sem registros é zerado (0.305244ms)
+✔ U13 | RN-002 | saldo negativo e soma por categorias (0.222962ms)
+✔ U14 | RNF-004 | 0,10 + 0,20 resulta exatamente em 0,30 (0.154911ms)
+✔ U15 | RN-003 | mês bissexto, dezembro e mês inválido (0.327146ms)
+✔ U16 | RN-003 | sem orçamento não calcula percentual (0.180028ms)
+✔ U17 | RN-003 | abaixo, igual e acima do limite (0.302931ms)
+✔ U18 | RN-003 | status considera centavos antes de arredondar percentual (0.131255ms)
+✔ U19 | datas | relógio local retorna data válida (0.652441ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 344.033747
+ℹ start of coverage report
+ℹ ----------------------------------------------------------------
+ℹ file            | line % | branch % | funcs % | uncovered lines
+ℹ ----------------------------------------------------------------
+ℹ src             |        |          |         | 
+ℹ  domain.cjs     | 100.00 |    95.65 |  100.00 | 
+ℹ  repository.cjs | 100.00 |    76.92 |  100.00 | 
+ℹ  server.cjs     |  83.02 |    78.72 |   71.43 | 38-40 47-52
+ℹ  service.cjs    | 100.00 |   100.00 |  100.00 | 
+ℹ ----------------------------------------------------------------
+ℹ all files       |  95.38 |    89.19 |   94.29 | 
+ℹ ----------------------------------------------------------------
+ℹ end of coverage report
